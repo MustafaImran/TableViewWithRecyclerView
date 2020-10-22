@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Table View with Recycler View</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="designation">Designation</string>
+</resources>

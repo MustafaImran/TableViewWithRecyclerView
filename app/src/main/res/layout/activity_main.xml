@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/table_heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                style="@style/table_header"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/name"/>
+
+            <TextView
+                android:layout_height="@dimen/_30sdp"
+                android:layout_width="0dp"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="@string/age"
+                style="@style/table_header"
+                android:paddingEnd="@dimen/_5sdp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_height="@dimen/_30sdp"
+                android:layout_width="0dp"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="@string/designation"
+                style="@style/table_header"
+                android:paddingEnd="@dimen/_5sdp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/table_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_heading_layout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

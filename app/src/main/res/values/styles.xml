@@ -1,0 +1,36 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="table_header" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:background">#FF0000</item>
+        <item name="android:layout_marginRight">@dimen/_1sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_1sdp</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:paddingLeft">@dimen/_10sdp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+    </style>
+
+    <style name="table_row_item" parent="@android:style/TextAppearance.Small">
+       <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginRight">@dimen/_1sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_1sdp</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:paddingLeft">@dimen/_10sdp</item>
+        <item name="android:layout_height">@dimen/_30sdp</item>
+    </style>
+
+</resources>
